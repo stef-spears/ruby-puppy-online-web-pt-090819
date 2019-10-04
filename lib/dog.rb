@@ -1,3 +1,5 @@
+require 'pry'
+
 class Dog 
   
   attr_accessor :name
@@ -18,7 +20,8 @@ class Dog
   end 
   
   def self.print_all
-    print self.name.join("\n")
+    binding.pry
+    print 
   end 
   
 end 
