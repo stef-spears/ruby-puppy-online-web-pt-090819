@@ -5,12 +5,10 @@ class Dog
   attr_accessor :name
   
   @@all = []
-  NAMES = []
   
   def initialize(name)
     @name = name 
     @@all << self 
-    NAMES << name 
   end 
   
   
@@ -23,7 +21,7 @@ class Dog
   end 
   
   def self.print_all
-    puts NAMES.uniq.join("\n")
+    @@all.each {   }
   end 
   
   def save 
