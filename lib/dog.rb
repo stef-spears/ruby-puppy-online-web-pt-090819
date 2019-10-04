@@ -10,7 +10,7 @@ class Dog
   def initialize(name)
     @name = name 
     @@all << self 
-    #@@names << name 
+    @@names << @name 
   end 
   
   def self.all 
@@ -22,7 +22,7 @@ class Dog
   end 
   
   def self.print_all
-    @@all.to_s 
+    @@names.to_s  
   end 
   
   def save 
