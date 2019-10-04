@@ -13,7 +13,6 @@ class Dog
     NAMES << name 
   end 
   
-  binding.pry
   
   def self.all 
     @@all 
@@ -24,7 +23,7 @@ class Dog
   end 
   
   def self.print_all
-   print NAMES.join("\n")
+    NAMES.join("\n")
   end 
   
   def save 
