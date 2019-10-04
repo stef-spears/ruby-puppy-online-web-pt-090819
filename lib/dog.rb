@@ -13,6 +13,8 @@ class Dog
     NAMES << name 
   end 
   
+  binding.pry
+  
   def self.all 
     @@all 
   end 
@@ -27,5 +29,5 @@ class Dog
   
   def save 
   end 
- # binding.pry
+ # 
 end 
