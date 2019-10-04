@@ -23,7 +23,7 @@ class Dog
   end 
   
   def self.print_all
-    puts NAMES.join("\n")
+    puts NAMES.uniq.join("\n")
   end 
   
   def save 
