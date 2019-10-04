@@ -5,10 +5,12 @@ class Dog
   attr_accessor :name
   
   @@all = []
+  @@names = []
   
   def initialize(name)
     @name = name 
     @@all << self 
+    @@names << name 
   end 
   
   def self.all 
@@ -20,7 +22,7 @@ class Dog
   end 
   
   def self.print_all
-    print name
+    @@names
   end 
-  binding.pry
+ # binding.pry
 end 
