@@ -22,7 +22,7 @@ class Dog
   end 
   
   def self.print_all
-   print NAMES.join("/n")
+   print NAMES.join("\n")
   end 
   
   def save 
