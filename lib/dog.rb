@@ -22,7 +22,7 @@ class Dog
   end 
   
   def self.print_all
-    @@names.to_s  
+    @@names
   end 
   
   def save 
